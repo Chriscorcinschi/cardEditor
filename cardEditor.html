@@ -180,6 +180,119 @@
                   </div>
                </div>
             </section>
+
+            <!-- Layout Group -->
+            <section class="space-y-4 pt-4 border-t border-gray-100">
+               <h3
+                  class="text-xs font-bold text-gray-400 uppercase tracking-wider"
+               >
+                  Layout & Spacing
+               </h3>
+
+               <div>
+                  <div class="flex items-center justify-between mb-1">
+                     <label class="text-sm font-semibold text-gray-700"
+                        >Horizontal Padding</label
+                     >
+                     <span
+                        id="px-val"
+                        class="text-sm font-medium text-indigo-600 bg-indigo-50 px-2 py-0.5 rounded"
+                        >20px</span
+                     >
+                  </div>
+                  <input
+                     data-prop="px"
+                     min="0"
+                     max="100"
+                     value="40"
+                     class="w-full"
+                     type="range"
+                  />
+               </div>
+
+               <div>
+                  <div class="flex items-center justify-between mb-1">
+                     <label class="text-sm font-semibold text-gray-700"
+                        >Vertical Padding</label
+                     >
+                     <span
+                        class="text-sm font-medium text-indigo-600 bg-indigo-50 px-2 py-0.5 rounded"
+                        id="py-val"
+                        >20px</span
+                     >
+                  </div>
+                  <input
+                     data-prop="py"
+                     min="0"
+                     max="100"
+                     value="24"
+                     type="range"
+                     class="w-full"
+                  />
+               </div>
+
+               <div>
+                  <div class="flex items-center justify-between mb-1">
+                     <label class="text-sm font-semibold text-gray-700"
+                        >Corner Radius</label
+                     >
+                     <span
+                        class="text-sm font-medium text-indigo-600 bg-indigo-50 px-2 py-0.5 rounded"
+                        id="radius-val"
+                        >12px</span
+                     >
+                  </div>
+                  <input
+                     data-prop="radius"
+                     min="0"
+                     max="100"
+                     value="40"
+                     type="range"
+                     class="w-full"
+                  />
+               </div>
+            </section>
+            <section class="space-y-4 pt-4 border-t border-gray-100">
+               <h3
+                  class="text-xs font-bold text-gray-400 uppercase tracking-wider"
+               >
+                  Border
+               </h3>
+               <div class="space-y-4">
+                  <div>
+                     <div class="flex justify-between items-center mb-1">
+                        <label class="text-sm font-semibold text-gray-700"
+                           >Border Width</label
+                        >
+                        <span
+                           id="borderWidth-val"
+                           class="text-xs font-medium text-indigo-600 bg-indigo-50 px-2 py-0.5 rounded"
+                           >8px</span
+                        >
+                     </div>
+                     <input
+                        data-prop="borderWidth"
+                        type="range"
+                        min="0"
+                        max="100"
+                        value="3"
+                        class="w-full"
+                     />
+                  </div>
+
+                  <div class="flex items-center justify-between">
+                     <label class="text-sm font-semibold text-gray-700"
+                        >Border Color</label
+                     >
+                     <input
+                        data-prop="borderColor"
+                        type="color"
+                        class="w-10 h-9 p-1 bg-white border border-gray-200 rounded-lg cursor-pointer"
+                        value="#e5e7eb"
+                     />
+                  </div>
+               </div>
+            </section>
          </aside>
       </main>
       <script src="script.js"></script>
