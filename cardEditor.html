@@ -11,7 +11,44 @@
          rel="stylesheet"
       />
    </head>
-   <body>
+   <body class="min-h-screen flex flex-col">
+      <header
+         class="bg-white border-b border-gray-200 px-8 py-4 flex justify-between items-center sticky top-0 z-10"
+      >
+         <div>
+            <h1 class="text-xl font-bold text-gray-900 flex items-center gap-2">
+               <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6 text-indigo-600"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+               >
+                  <path
+                     stroke-linecap="round"
+                     stroke-linejoin="round"
+                     stroke-width="2"
+                     d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"
+                  /></svg
+               >Card Studio
+            </h1>
+         </div>
+         <div class="flex gap-4">
+            <button
+               id="reset-btn"
+               class="px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-lg hover:bg-gray-50 transition"
+            >
+               Reset
+            </button>
+            <button
+               id="export-btn"
+               class="px-4 py-2 text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-500 rounded-lg shadow-sm shadow-indigo-200 transition"
+            >
+               Export Image
+            </button>
+         </div>
+      </header>
+
       <script src="script.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
    </body>
