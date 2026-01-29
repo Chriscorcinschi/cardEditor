@@ -21,3 +21,21 @@ const card = {
 
 // Global Input Selector
 const inputs = document.querySelectorAll("[data-prop]");
+
+//modify DOM & CSS
+function applyChange(prop, val) {
+   // Text/Images Update
+   if (prop === "img") card.img.src = val || defaults.img;
+   if (prop === "title") card.title.textContent = val;
+   if (prop === "description") card.desc.textContent = val;
+
+   // CSS Variables Update (Design Tokens)
+   const unit = ["px", "py", "radius", "borderWidth"].includes(prop)
+      ? "px"
+      : "";
+   document.documentElement.style.setProperty(`--${prop}`, val + unit);
+
+   //  Updating Numeric Labels
+   const label = document.getElementById(`${prop}-val`);
+   if (label) label.textContent = val + (unit || "");
+}
