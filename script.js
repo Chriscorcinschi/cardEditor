@@ -18,3 +18,6 @@ const card = {
    title: document.querySelector("#card h2"),
    desc: document.querySelector("#card p"),
 };
+
+// Global Input Selector
+const inputs = document.querySelectorAll("[data-prop]");
