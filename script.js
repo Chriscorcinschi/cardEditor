@@ -39,3 +39,12 @@ function applyChange(prop, val) {
    const label = document.getElementById(`${prop}-val`);
    if (label) label.textContent = val + (unit || "");
 }
+
+//State-UI sync
+function updateUI(state) {
+   inputs.forEach((input) => {
+      const prop = input.dataset.prop;
+      input.value = state[prop];
+      applyChange(prop, state[prop]);
+   });
+}
