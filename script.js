@@ -2,7 +2,7 @@ const defaults = {
    img: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2564&auto=format&fit=crop",
    title: "Abstract Gradient",
    description:
-      "Customize this card by changing the values in the bar. You can adjust the padding, colors, and even the border radius to perfectly match your style.",
+      "Customize this card by changing the values in the sidebar. You can adjust the padding, colors, and even the border radius to perfectly match your style.",
    titleColor: "#111827",
    textColor: "#4b5563",
    px: 24,
@@ -48,6 +48,7 @@ function applyChange(prop, val) {
 function updateUI(state) {
    inputs.forEach((input) => {
       const prop = input.dataset.prop;
+
       input.value = state[prop];
       applyChange(prop, state[prop]);
    });
