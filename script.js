@@ -60,4 +60,10 @@ function init() {
       });
    });
 }
+
+//Reset Button state
+document
+   .getElementById("reset-btn")
+   .addEventListener("click", () => updateUI(defaults));
+
 init();
