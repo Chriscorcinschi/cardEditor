@@ -10,3 +10,11 @@ const defaults = {
    borderWidth: 3,
    borderColor: "#497385",
 };
+
+// DOM References
+const card = {
+   element: document.getElementById("card"),
+   img: document.getElementById("card-img"),
+   title: document.querySelector("#card h2"),
+   desc: document.querySelector("#card p"),
+};
