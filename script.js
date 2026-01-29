@@ -1,0 +1,12 @@
+const defaults = {
+   img: "https://images.pexels.com/photos/22644127/pexels-photo-22644127.jpeg",
+   title: "Abstract Gradient",
+   description: "Personalize this card by changing the values in the sidebar.",
+   titleColor: "#e0b06c",
+   textColor: "#242424",
+   px: 20,
+   py: 20,
+   radius: 12,
+   borderWidth: 3,
+   borderColor: "#497385",
+};
