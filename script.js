@@ -7,7 +7,7 @@ const defaults = {
    px: 20,
    py: 20,
    radius: 12,
-   borderWidth: 3,
+   borderWidth: 2,
    borderColor: "#497385",
 };
 
