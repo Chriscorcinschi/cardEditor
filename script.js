@@ -66,4 +66,19 @@ document
    .getElementById("reset-btn")
    .addEventListener("click", () => updateUI(defaults));
 
+// Export Button
+document.getElementById("export-btn").addEventListener("click", async () => {
+   const card = document.getElementById("card");
+
+   const canvas = await html2canvas(card, {
+      useCORS: true,
+      allowTaint: false,
+      backgroundColor: null,
+   });
+
+   const link = document.createElement("a");
+   link.download = "card.png";
+   link.href = canvas.toDataURL("image/png", 1.0);
+   link.click();
+});
 init();
