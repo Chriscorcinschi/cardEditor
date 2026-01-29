@@ -22,6 +22,8 @@ const card = {
 // Global Input Selector
 const inputs = document.querySelectorAll("[data-prop]");
 
+window.html2canvas = window.html2canvas || null;
+
 //modify DOM & CSS
 function applyChange(prop, val) {
    // Text/Images Update
@@ -81,4 +83,7 @@ document.getElementById("export-btn").addEventListener("click", async () => {
    link.href = canvas.toDataURL("image/png", 1.0);
    link.click();
 });
-init();
+
+document.addEventListener("DOMContentLoaded", function () {
+   init();
+});
