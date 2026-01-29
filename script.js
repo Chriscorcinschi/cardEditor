@@ -48,3 +48,16 @@ function updateUI(state) {
       applyChange(prop, state[prop]);
    });
 }
+
+// Initialization
+function init() {
+   updateUI(defaults); //Set initial state
+
+   //Template: Event Delegation or Unique Cleanup Listener
+   inputs.forEach((input) => {
+      input.addEventListener("input", (e) => {
+         applyChange(e.target.dataset.prop, e.target.value);
+      });
+   });
+}
+init();
