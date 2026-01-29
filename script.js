@@ -1,14 +1,16 @@
 const defaults = {
-   img: "https://images.pexels.com/photos/22644127/pexels-photo-22644127.jpeg",
+   img: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2564&auto=format&fit=crop",
    title: "Abstract Gradient",
-   description: "Personalize this card by changing the values in the sidebar.",
-   titleColor: "#e0b06c",
-   textColor: "#242424",
-   px: 20,
-   py: 20,
+   description:
+      "Customize this card by changing the values in the bar. You can adjust the padding, colors, and even the border radius to perfectly match your style.",
+   titleColor: "#111827",
+   textColor: "#4b5563",
+   px: 24,
+   py: 24,
    radius: 12,
    borderWidth: 2,
-   borderColor: "#497385",
+   borderColor: "#8fb8ca",
+   bgColor: " #ffffff",
 };
 
 // DOM References
@@ -32,7 +34,7 @@ function applyChange(prop, val) {
    if (prop === "description") card.desc.textContent = val;
 
    // CSS Variables Update (Design Tokens)
-   const unit = ["px", "py", "radius", "borderWidth"].includes(prop)
+   const unit = ["px", "py", "radius", "borderWidth", ""].includes(prop)
       ? "px"
       : "";
    document.documentElement.style.setProperty(`--${prop}`, val + unit);
