@@ -17,6 +17,7 @@ body {
    border: var(--borderWidth) solid var(--borderColor);
    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
    background-color: var(--bgColor);
+   transform: scale(0.95);
 }
 #card img {
    border-radius: calc(var(--radius) - var(--borderWidth))
@@ -26,15 +27,17 @@ body {
    width: 100%;
 }
 #card .content {
-   padding: var(--py) var(--px);
+   padding: calc(var(--py) * 0.75) calc(var(--px) * 0.75);
 }
 #card h2 {
    color: var(--titleColor);
-   line-height: 1.25;
+   font-size: 1.25rem;
+   line-height: 1.2;
 }
 #card p {
    color: var(--textColor);
-   line-height: 1.6;
+   font-size: 0.875rem;
+   line-height: 1.5;
 }
 
 /* Custom range slider styling */
